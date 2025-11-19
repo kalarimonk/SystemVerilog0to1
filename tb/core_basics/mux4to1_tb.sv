@@ -37,7 +37,7 @@ module mux4to1_tb;
 
     for (int i = 0; i < 64; i++) begin
         // Unpack bits: {a, b, c, d, sel[1], sel[0]}
-        // {a, b, c, d, sel} = i; // fails for icarus verilog simulator
+        // {a, b, c, d, sel} = i; // unpacking fails for icarus verilog simulator
 
         a   = i[5];
         b   = i[4];
