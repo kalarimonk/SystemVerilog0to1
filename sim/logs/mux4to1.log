@@ -1,0 +1,81 @@
+VCD info: dumpfile sim/waves/mux4to1.vcd opened for output.
+
+========================================
+  Running MUX4to1 Testbench
+========================================
+[PASS] i=0 | a=0 b=0 c=0 d=0 sel=00 | y=0
+[PASS] i=1 | a=0 b=0 c=0 d=0 sel=01 | y=0
+[PASS] i=2 | a=0 b=0 c=0 d=0 sel=10 | y=0
+[PASS] i=3 | a=0 b=0 c=0 d=0 sel=11 | y=0
+[PASS] i=4 | a=0 b=0 c=0 d=1 sel=00 | y=0
+[PASS] i=5 | a=0 b=0 c=0 d=1 sel=01 | y=0
+[PASS] i=6 | a=0 b=0 c=0 d=1 sel=10 | y=0
+[PASS] i=7 | a=0 b=0 c=0 d=1 sel=11 | y=1
+[PASS] i=8 | a=0 b=0 c=1 d=0 sel=00 | y=0
+[PASS] i=9 | a=0 b=0 c=1 d=0 sel=01 | y=0
+[PASS] i=10 | a=0 b=0 c=1 d=0 sel=10 | y=1
+[PASS] i=11 | a=0 b=0 c=1 d=0 sel=11 | y=0
+[PASS] i=12 | a=0 b=0 c=1 d=1 sel=00 | y=0
+[PASS] i=13 | a=0 b=0 c=1 d=1 sel=01 | y=0
+[PASS] i=14 | a=0 b=0 c=1 d=1 sel=10 | y=1
+[PASS] i=15 | a=0 b=0 c=1 d=1 sel=11 | y=1
+[PASS] i=16 | a=0 b=1 c=0 d=0 sel=00 | y=0
+[PASS] i=17 | a=0 b=1 c=0 d=0 sel=01 | y=1
+[PASS] i=18 | a=0 b=1 c=0 d=0 sel=10 | y=0
+[PASS] i=19 | a=0 b=1 c=0 d=0 sel=11 | y=0
+[PASS] i=20 | a=0 b=1 c=0 d=1 sel=00 | y=0
+[PASS] i=21 | a=0 b=1 c=0 d=1 sel=01 | y=1
+[PASS] i=22 | a=0 b=1 c=0 d=1 sel=10 | y=0
+[PASS] i=23 | a=0 b=1 c=0 d=1 sel=11 | y=1
+[PASS] i=24 | a=0 b=1 c=1 d=0 sel=00 | y=0
+[PASS] i=25 | a=0 b=1 c=1 d=0 sel=01 | y=1
+[PASS] i=26 | a=0 b=1 c=1 d=0 sel=10 | y=1
+[PASS] i=27 | a=0 b=1 c=1 d=0 sel=11 | y=0
+[PASS] i=28 | a=0 b=1 c=1 d=1 sel=00 | y=0
+[PASS] i=29 | a=0 b=1 c=1 d=1 sel=01 | y=1
+[PASS] i=30 | a=0 b=1 c=1 d=1 sel=10 | y=1
+[PASS] i=31 | a=0 b=1 c=1 d=1 sel=11 | y=1
+[PASS] i=32 | a=1 b=0 c=0 d=0 sel=00 | y=1
+[PASS] i=33 | a=1 b=0 c=0 d=0 sel=01 | y=0
+[PASS] i=34 | a=1 b=0 c=0 d=0 sel=10 | y=0
+[PASS] i=35 | a=1 b=0 c=0 d=0 sel=11 | y=0
+[PASS] i=36 | a=1 b=0 c=0 d=1 sel=00 | y=1
+[PASS] i=37 | a=1 b=0 c=0 d=1 sel=01 | y=0
+[PASS] i=38 | a=1 b=0 c=0 d=1 sel=10 | y=0
+[PASS] i=39 | a=1 b=0 c=0 d=1 sel=11 | y=1
+[PASS] i=40 | a=1 b=0 c=1 d=0 sel=00 | y=1
+[PASS] i=41 | a=1 b=0 c=1 d=0 sel=01 | y=0
+[PASS] i=42 | a=1 b=0 c=1 d=0 sel=10 | y=1
+[PASS] i=43 | a=1 b=0 c=1 d=0 sel=11 | y=0
+[PASS] i=44 | a=1 b=0 c=1 d=1 sel=00 | y=1
+[PASS] i=45 | a=1 b=0 c=1 d=1 sel=01 | y=0
+[PASS] i=46 | a=1 b=0 c=1 d=1 sel=10 | y=1
+[PASS] i=47 | a=1 b=0 c=1 d=1 sel=11 | y=1
+[PASS] i=48 | a=1 b=1 c=0 d=0 sel=00 | y=1
+[PASS] i=49 | a=1 b=1 c=0 d=0 sel=01 | y=1
+[PASS] i=50 | a=1 b=1 c=0 d=0 sel=10 | y=0
+[PASS] i=51 | a=1 b=1 c=0 d=0 sel=11 | y=0
+[PASS] i=52 | a=1 b=1 c=0 d=1 sel=00 | y=1
+[PASS] i=53 | a=1 b=1 c=0 d=1 sel=01 | y=1
+[PASS] i=54 | a=1 b=1 c=0 d=1 sel=10 | y=0
+[PASS] i=55 | a=1 b=1 c=0 d=1 sel=11 | y=1
+[PASS] i=56 | a=1 b=1 c=1 d=0 sel=00 | y=1
+[PASS] i=57 | a=1 b=1 c=1 d=0 sel=01 | y=1
+[PASS] i=58 | a=1 b=1 c=1 d=0 sel=10 | y=1
+[PASS] i=59 | a=1 b=1 c=1 d=0 sel=11 | y=0
+[PASS] i=60 | a=1 b=1 c=1 d=1 sel=00 | y=1
+[PASS] i=61 | a=1 b=1 c=1 d=1 sel=01 | y=1
+[PASS] i=62 | a=1 b=1 c=1 d=1 sel=10 | y=1
+[PASS] i=63 | a=1 b=1 c=1 d=1 sel=11 | y=1
+
+========================================
+  Test Summary
+========================================
+Total Tests: 64
+Passed:      64
+Failed:      0
+Success Rate: 100.0%
+========================================
+
+✓ All tests PASSED!
+tb/core_basics/mux4to1_tb.sv:88: $finish called at 320 (1s)

@@ -1,0 +1,25 @@
+VCD info: dumpfile sim/waves/mux2to1.vcd opened for output.
+
+========================================
+  Running MUX2to1 Testbench
+========================================
+[PASS] Test 1: Case 1 | a=0, b=0, sel=0, result=0, expected=0
+[PASS] Test 2: Case 2 | a=0, b=0, sel=1, result=0, expected=0
+[PASS] Test 3: Case 3 | a=0, b=1, sel=0, result=0, expected=0
+[PASS] Test 4: Case 4 | a=0, b=1, sel=1, result=1, expected=1
+[PASS] Test 5: Case 5 | a=1, b=0, sel=0, result=1, expected=1
+[PASS] Test 6: Case 6 | a=1, b=0, sel=1, result=0, expected=0
+[PASS] Test 7: Case 7 | a=1, b=1, sel=0, result=1, expected=1
+[PASS] Test 8: Case 8 | a=1, b=1, sel=1, result=1, expected=1
+
+========================================
+  Test Summary
+========================================
+Total Tests: 8
+Passed:      8
+Failed:      0
+Success Rate: 100.0%
+========================================
+
+✓ All tests PASSED!
+tb/core_basics/mux2to1_tb.sv:83: $finish called at 80000 (1ps)

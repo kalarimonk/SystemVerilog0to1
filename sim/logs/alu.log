@@ -1,0 +1,67 @@
+VCD info: dumpfile sim/waves/alu.vcd opened for output.
+
+========================================
+  ALU Testbench - Comprehensive Testing
+========================================
+
+Test Group 1: Basic Operations
+------------------------------
+[PASS] Test 1: Basic ADD | a=10, b=5, op=000, result=15, expected=15
+[PASS] Test 2: Basic SUB | a=10, b=5, op=001, result=5, expected=5
+[PASS] Test 3: Basic AND (1010 & 0101 = 0000) | a=10, b=5, op=010, result=0, expected=0
+[PASS] Test 4: Basic OR  (1010 | 0101 = 1111) | a=10, b=5, op=011, result=15, expected=15
+[PASS] Test 5: Basic XOR (1010 ^ 0101 = 1111) | a=10, b=5, op=100, result=15, expected=15
+
+Test Group 2: Zero Operations
+------------------------------
+[PASS] Test 6: ADD with zeros | a=0, b=0, op=000, result=0, expected=0
+[PASS] Test 7: ADD zero + value | a=0, b=5, op=000, result=5, expected=5
+[PASS] Test 8: SUB value - zero | a=5, b=0, op=001, result=5, expected=5
+[PASS] Test 9: AND with zeros | a=0, b=0, op=010, result=0, expected=0
+[PASS] Test 10: OR with zeros | a=0, b=0, op=011, result=0, expected=0
+[PASS] Test 11: XOR with zeros | a=0, b=0, op=100, result=0, expected=0
+
+Test Group 3: Maximum Values
+------------------------------
+[PASS] Test 12: ADD overflow (255+255=510, wraps to 254) | a=255, b=255, op=000, result=254, expected=254
+[PASS] Test 13: SUB 255-0=255 | a=255, b=0, op=001, result=255, expected=255
+[PASS] Test 14: AND all ones | a=255, b=255, op=010, result=255, expected=255
+[PASS] Test 15: OR all ones | a=255, b=255, op=011, result=255, expected=255
+[PASS] Test 16: XOR identical (255^255=0) | a=255, b=255, op=100, result=0, expected=0
+
+Test Group 4: Bitwise Operations
+--------------------------------
+[PASS] Test 17: AND complementary patterns | a=170, b=85, op=010, result=0, expected=0
+[PASS] Test 18: OR complementary patterns | a=170, b=85, op=011, result=255, expected=255
+[PASS] Test 19: XOR complementary patterns | a=170, b=85, op=100, result=255, expected=255
+[PASS] Test 20: XOR another pattern | a=204, b=51, op=100, result=255, expected=255
+
+Test Group 5: Single Bit Operations
+-----------------------------------
+[PASS] Test 21: ADD single bits | a=1, b=1, op=000, result=2, expected=2
+[PASS] Test 22: OR MSB set | a=128, b=128, op=011, result=128, expected=128
+[PASS] Test 23: XOR with LSB | a=1, b=0, op=100, result=1, expected=1
+
+Test Group 6: Invalid Operation Code
+------------------------------------
+ERROR: src/core_basics/alu.sv:24: Invalid operation code: 101
+       Time: 230000  Scope: alu_tb.dut
+[PASS] Test 24: Invalid op (101) - should return 0 | a=10, b=5, op=101, result=0, expected=0
+ERROR: src/core_basics/alu.sv:24: Invalid operation code: 110
+       Time: 240000  Scope: alu_tb.dut
+[PASS] Test 25: Invalid op (110) - should return 0 | a=10, b=5, op=110, result=0, expected=0
+ERROR: src/core_basics/alu.sv:24: Invalid operation code: 111
+       Time: 250000  Scope: alu_tb.dut
+[PASS] Test 26: Invalid op (111) - should return 0 | a=10, b=5, op=111, result=0, expected=0
+
+========================================
+  Test Summary
+========================================
+Total Tests: 26
+Passed:      26
+Failed:      0
+Success Rate: 100.0%
+========================================
+
+✓ All tests PASSED!
+tb/core_basics/alu_tb.sv:153: $finish called at 260000 (1ps)

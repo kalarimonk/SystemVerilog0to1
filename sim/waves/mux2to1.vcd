@@ -1,0 +1,100 @@
+$date
+	Tue Nov 18 18:21:25 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mux2to1_tb $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ sel $end
+$var integer 32 % fail_count [31:0] $end
+$var integer 32 & pass_count [31:0] $end
+$var integer 32 ' test_count [31:0] $end
+$scope module uut $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ sel $end
+$var wire 1 ! y $end
+$upscope $end
+$scope task test_case $end
+$var reg 1 ( expected_y $end
+$var reg 1 ) test_a $end
+$var reg 1 * test_b $end
+$var reg 1 + test_sel $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0+
+0*
+0)
+0(
+b0 '
+b0 &
+b0 %
+0$
+0#
+0"
+0!
+$end
+#10000
+1$
+1+
+b1 &
+b1 '
+#20000
+0$
+1#
+0+
+1*
+b10 &
+b10 '
+#30000
+1!
+1$
+1(
+1+
+b11 &
+b11 '
+#40000
+0$
+0#
+1"
+0+
+0*
+1)
+b100 &
+b100 '
+#50000
+0!
+1$
+0(
+1+
+b101 &
+b101 '
+#60000
+1!
+0$
+1#
+1(
+0+
+1*
+b110 &
+b110 '
+#70000
+1$
+1+
+b111 &
+b111 '
+#80000
+b1000 &
+b1000 '
