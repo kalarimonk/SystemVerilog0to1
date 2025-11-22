@@ -13,12 +13,13 @@ initial begin
     end
 end
 
+logic flag;
 
 always_comb begin
     valid = 0;
     out = '0; // default value
 
-    logic flag = 1;
+    flag = 1;
 
     for (int i = INPUT_LINES - 1; i >= 0 && flag; i--) begin
         if (data[i]) begin
